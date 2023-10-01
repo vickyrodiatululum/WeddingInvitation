@@ -19,7 +19,7 @@
     <!-- hero section -->
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
       <main>
-        <h4>kepada Bapak/Ibu/Saudara/i,</h4>
+        <h4>kepada <span></span></h4>
         <h1>Epul & Santi</h1>
         <p>akan melangsungkan pernikahan dalam:</p>
         <div class="simply-countdown"></div>
@@ -30,10 +30,10 @@
 
     <nav class="navbar navbar-expand-md bg-transparant sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Invitation Wedding</a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#home">Invitation Wedding</a>
+        <!-- <button class="navbar-toggler border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Invitation Wedding</h5>
@@ -114,7 +114,15 @@
               </svg>
             </div>
             <p class="alamat">Kp. Palasari RT 001 / RW 001 <br />Pasir Datar Indah <br />Caringin</p>
-
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.663805439898!2d106.895319!3d-6.930727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTUnNTAuNiJTIDEwNsKwNTMnNDMuMiJF!5e0!3m2!1sid!2sid!4v1695718495384!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 4px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
             <a href="https://goo.gl/maps/TuU6ZJgXdqVYXqjm6" target="_blank" class="btn btn-light">klik di sini untuk membuka maps</a>
           </div>
         </div>
@@ -235,30 +243,64 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia amet nostrum eum?</p>
           </div>
         </div>
-        <div class="row row-cols-md-5 row-cols-sm-2 row-cols-1 justify-content-center">
-          <div class="col m-2">
-            <a href="img/galeri/ex_1.webp">
-              <img src="img/galeri/ex_1.webp" alt="image_1" class="img-fluid w-100 rounded" />
-            </a>
-            <p>Lorem ipsum dolor sit amet.</p>
+        <div class="row">
+          <div class="column">
+            <img src="img/galeri/anime1.jpg" style="width: 100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
           </div>
-          <div class="col m-2">
-            <a target="blank" href="https://picsum.photosid/250/300/300">
-              <img src="https://picsum.photos/id/230/400/300" alt="image_1" class="img-fluid w-100 rounded" />
-            </a>
-            <p>Lorem ipsum dolor sit amet.</p>
+          <div class="column">
+            <img src="img/galeri/anime2.jpg" style="width: 100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" />
           </div>
-          <div class="col m-2">
-            <a target="blank" href="https://picsum.photosid/250/300/300">
-              <img src="https://picsum.photos/id/240/400/300" alt="image_1" class="img-fluid w-100 rounded" />
-            </a>
-            <p>Lorem ipsum dolor sit amet.</p>
+          <div class="column">
+            <img src="img/galeri/anime3.jpg" style="width: 100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" />
           </div>
-          <div class="col mt-2">
-            <a target="blank" href="https://picsum.photosid/250/300/300">
-              <img src="https://picsum.photos/id/255/400/300" alt="image_1" class="img-fluid w-100 rounded" />
-            </a>
-            <p>Lorem ipsum dolor sit amet.</p>
+          <div class="column">
+            <img src="img/galeri/anime4.jpg" style="width: 100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()"><i class="bi bi-x"></i></span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="img/galeri/anime1.jpg" style="width: 100%"/>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="img/galeri/anime2.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="img/galeri/anime3.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="img/galeri/anime4.jpg" style="width: 100%" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"><i class="bi bi-arrow-left-short"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="bi bi-arrow-right-short"></i></a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            <!-- <div class="list-demo">
+              <div class="column">
+                <img class="demo cursor" src="img/galeri/anime1.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Nature and sunrise" />
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="img/galeri/anime2.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Snow" />
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="img/galeri/anime3.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Mountains and fjords" />
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="img/galeri/anime4.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Northern Lights" />
+              </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -348,8 +390,9 @@
         <i class="bi bi-play-circle"></i>
       </div>
     </div>
-
+    <!-- cdn bootsrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- script countdown -->
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2023, // required
@@ -365,7 +408,7 @@
         },
       });
     </script>
-
+    <!-- script offcanvaas -->
     <script>
       const stickyTop = document.querySelector(".sticky-top");
       const offcanvas = document.querySelector(".offcanvas");
@@ -378,7 +421,50 @@
         stickyTop.style.overflow = "hidden";
       });
     </script>
+    <!-- script gallery -->
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
 
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+    <!-- script untuk konfigurasi audio -->
     <script>
       const rootElement = document.querySelector(":root");
       const iconAudio = document.querySelector(".icon-audio");
@@ -425,7 +511,7 @@
       // }
       disableScroll();
     </script>
-
+    <!-- script untuk konfigurasi form kehadiran -->
     <script>
       window.addEventListener("load", function () {
         const form = document.getElementById("my-form");
@@ -441,6 +527,15 @@
           });
         });
       });
+    </script>
+    <!-- mengabil nama tujuan undangan dari params location search -->
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("n") || "";
+      const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ","); //itu adalah strign literal
+      document.querySelector("#nama").value = nama;
     </script>
   </body>
 </html>
