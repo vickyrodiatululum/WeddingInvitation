@@ -14,23 +14,27 @@
     <script src="countdown/simplyCountdown.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" type="" href="style.css" />
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- hero section -->
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
-      <main>
+      <main class="animate__animated animate__bounceIn animate__delay-1s">
         <h4>kepada <span></span></h4>
-        <h1>Epul & Santi</h1>
+        <h1>Saepul & Santi</h1>
         <p>akan melangsungkan pernikahan dalam:</p>
         <div class="simply-countdown"></div>
 
-        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
+        <a href="#opening" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
 
     <nav class="navbar navbar-expand-md bg-transparant sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand" href="#home">Invitation Wedding</a>
+        <a class="navbar-brand" href="#opening">Invitation Wedding</a>
         <!-- <button class="navbar-toggler border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> -->
@@ -42,22 +46,16 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#opening"></a>
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
                 <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item" data-bs-dismiss="offcanvas">
                 <a class="nav-link" href="#info">Info</a>
               </li>
-              <!-- <li class="nav-item" data-bs-dismiss="offcanvas">
-                <a class="nav-link" href="#story">Story</a>
-              </li>
-              <li class="nav-item" data-bs-dismiss="offcanvas">
-                <a class="nav-link" href="#gallery">Gallery</a>
-              </li> -->
               <li class="nav-item" data-bs-dismiss="offcanvas">
                 <a class="nav-link" href="#rsvp">RSVP</a>
-              </li>
-              <li class="nav-item" data-bs-dismiss="offcanvas">
-                <a class="nav-link" href="#gifts">Gifts</a>
               </li>
             </ul>
           </div>
@@ -65,9 +63,32 @@
       </div>
     </nav>
 
+    <section class="salam_pembuka" id="opening">
+      <div class="container">
+        <div class="salam row justify-content-center mb-3" data-aos="fade-up">
+          <div class="col-md-8 col-lg-12 text-center">
+            <h2>اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ</h2>
+            <p>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaaAllah kami akan menyelenggarakan acara pernikahan</p>
+          </div>
+        </div>
+        <div class="hadist row justify-content-center" data-aos="fade-up">
+          <div class="col-md-12 text-center">
+            <h2>وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</h2>
+            <p>
+              Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh,
+              pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cat" data-aos="fade-up-right">
+        <img src="img/cat-love-removebg-preview.png" alt="kucingqu" />
+      </div>
+    </section>
+
     <section class="home" id="home">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-down">
           <div class="col-md-8 text-center">
             <h2>Acara Pernikahan</h2>
             <h3>Diselenggarakan pada 5 November 2023 di Sukabumi, Jawa Barat.</h3>
@@ -76,11 +97,11 @@
         </div>
         <div class="row couple mt-5">
           <div class="col-lg-6">
-            <div class="row">
+            <div class="row" data-aos="fade-right">
               <div class="col-8 text-end">
-                <h3>Epul</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus consequuntur libero est, quisquam magni maxime.</p>
-                <p>putra dari bpk.Lorem <br />Dan <br />Ibu. Ipsum</p>
+                <h3>Asep Saepuloh</h3>
+                <p>Putra pertama dari</p>
+                <p>Bapak. Suhaemi <br />dan <br />Ibu. Kamsah</p>
               </div>
               <div class="col-4">
                 <img src="img/boy.png" alt="mempelai pria" class="img-responsive rounded-circle" width="100%" />
@@ -88,14 +109,14 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="row">
+            <div class="row" data-aos="fade-left">
               <div class="col-4">
                 <img src="img/girl.png" alt="mempelai pria" class="img-responsive rounded-circle" width="100%" />
               </div>
               <div class="col-8">
-                <h3>Santi</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus consequuntur libero est, quisquam magni maxime.</p>
-                <p>putra dari bpk.Lorem <br />Dan <br />Ibu. Ipsum</p>
+                <h3>Santi Sulistianti</h3>
+                <p>Putri Pertama dari</p>
+                <p>Bapak. Rachmat <br />dan <br />Ibu. Lilis Sulistia</p>
               </div>
             </div>
           </div>
@@ -106,27 +127,31 @@
     <section class="info" id="info">
       <div class="container pt-5">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
+          <div class="col-md-8 col-10 text-center" data-aos="zoom-in-up">
             <h2>Informasi Acara</h2>
-            <div>
+            <!-- <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                 <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
               </svg>
-            </div>
-            <p class="alamat">Kp. Palasari RT 001 / RW 001 <br />Pasir Datar Indah <br />Caringin</p>
-            <div class="map"><iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.387532867187!2d106.89518799999999!3d-6.844059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTAnMzguNiJTIDEwNsKwNTMnNDIuNyJF!5e0!3m2!1sid!2sid!4v1696255641739!5m2!1sid!2sid" 
-              width="100%" 
-            height="250" 
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            </div>-->
+            <p class="alamat text-center">Kp. Palasari RT 001 / RW 001, Desa. Pasir Datar Indah, Kec. Caringin, Kab. Sukabumi</p>
+            <div class="map" data-aos="fade-up">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.387532867187!2d106.89518799999999!3d-6.844059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTAnMzguNiJTIDEwNsKwNTMnNDIuNyJF!5e0!3m2!1sid!2sid!4v1696255641739!5m2!1sid!2sid"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
             <a href="https://maps.app.goo.gl/1CMxhhRAZ5KEaX9p6" target="_blank" class="btn btn-light">klik di sini untuk membuka maps</a>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-5 col-10">
-            <div class="card text-center mb-4">
+            <div class="card text-center mb-4" data-aos="fade-up">
               <div class="card-header">Akad Nikah</div>
               <div class="card-body">
                 <div class="row justify-content-center">
@@ -135,7 +160,7 @@
                       <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
                       <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                     </svg>
-                    <p class="card-text">07:00 s/d 09:00</p>
+                    <p class="card-text">13:00 s/d 14:00</p>
                   </div>
                   <div class="col-md-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3-week" viewBox="0 0 16 16">
@@ -150,7 +175,7 @@
             </div>
           </div>
           <div class="col-md-5 col-10">
-            <div class="card text-center mb-4">
+            <div class="card text-center mb-4" data-aos="fade-up">
               <div class="card-header">Resepsi</div>
               <div class="card-body">
                 <div class="row justify-content-center">
@@ -159,7 +184,7 @@
                       <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
                       <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                     </svg>
-                    <p class="card-text">09:00 s/d Selesai</p>
+                    <p class="card-text">14:00 s/d Selesai</p>
                   </div>
                   <div class="col-md-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3-week" viewBox="0 0 16 16">
@@ -177,192 +202,71 @@
       </div>
     </section>
 
-    <!-- <section id="story" class="story">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <span>Bagaimana Cinta Kami Bersemi</span>
-            <h2>Cerita Kami</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium libero quae nisi vero?</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300)"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3>Pertama bertemu</h3>
-                    <span>1 Juni 2023</span>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, voluptatem!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301)"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3>Mulai Serius</h3>
-                    <span>5 Agustus 2023</span>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, voluptatem!</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image" style="background-image: url(https://picsum.photos/299/299)"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3>Tunangan</h3>
-                    <span>20 oktober 2023</span>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, voluptatem!</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section id="gallery" class="gallery bg-body-secondary">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <span>Memori Kisah Cinta kami</span>
-            <h2>Gallery Foto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia amet nostrum eum?</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <img src="img/galeri/anime1.jpg" style="width: 100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
-          </div>
-          <div class="column">
-            <img src="img/galeri/anime2.jpg" style="width: 100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" />
-          </div>
-          <div class="column">
-            <img src="img/galeri/anime3.jpg" style="width: 100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" />
-          </div>
-          <div class="column">
-            <img src="img/galeri/anime4.jpg" style="width: 100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
-          </div>
-        </div>
-
-        <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()"><i class="bi bi-x"></i></span>
-          <div class="modal-content">
-            <div class="mySlides">
-              <div class="numbertext">1 / 4</div>
-              <img src="img/galeri/anime1.jpg" style="width: 100%"/>
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">2 / 4</div>
-              <img src="img/galeri/anime2.jpg" style="width: 100%" />
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">3 / 4</div>
-              <img src="img/galeri/anime3.jpg" style="width: 100%" />
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">4 / 4</div>
-              <img src="img/galeri/anime4.jpg" style="width: 100%" />
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)"><i class="bi bi-arrow-left-short"></i></a>
-            <a class="next" onclick="plusSlides(1)"><i class="bi bi-arrow-right-short"></i></a>
-
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
-            <!-- <div class="list-demo">
-              <div class="column">
-                <img class="demo cursor" src="img/galeri/anime1.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Nature and sunrise" />
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="img/galeri/anime2.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Snow" />
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="img/galeri/anime3.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Mountains and fjords" />
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="img/galeri/anime4.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Northern Lights" />
-              </div>
-           </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <section id="rsvp" class="rsvp">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
+          <div class="col-md-8 col-10 text-center" data-aos="zoom-in-up">
             <h2>Konfirmasi Kehadiran</h2>
             <p>Isi Form Dibawah Untuk Melakukan Konfirmasi Kehadiran</p>
           </div>
         </div>
-        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbzQrbAU6b2Im2y5LP5wa2LktyejmRbqlpMO6WQ22cNXr8DRQ-bXr2qVr4Qov2M8uLhG/exec" id="my-form">
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="nama" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="nama" name="nama" />
+        <div class="row" data-aos="fade-up">
+          <form class="col align-items-center" method="POST" action="https://script.google.com/macros/s/AKfycbzQrbAU6b2Im2y5LP5wa2LktyejmRbqlpMO6WQ22cNXr8DRQ-bXr2qVr4Qov2M8uLhG/exec" id="my-form">
+            <div class="row row-cols-md-auto justify-content-center gap-3">
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="nama" name="nama" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="jumlah" class="form-label">Jumlah</label>
+                  <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="10" length="1" value="1" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="status" class="form-label">Keterangan</label>
+                  <select name="status" id="status" class="form-select">
+                    <option selected>Pilih Kehadiran</option>
+                    <option value="hadir">Hadir</option>
+                    <option value="tidak hadir">Tidak Hadir</option>
+                  </select>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="jumlah" class="form-label">Jumlah</label>
-              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="10" length="1" value="1" />
+            <div class="row row-cols-md-auto justify-content-center">
+              <div class="mb-3 col-md-5">
+                <label for="Ucapan dan Doa" class="form-label">Ucapan dan Do'a</label>
+                <textarea class="form-control" name="Ucapan dan Doa" id="ucapan" rows="3"></textarea>
+              </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="status" class="form-label">Keterangan</label>
-              <select name="status" id="status" class="form-select">
-                <option selected>Pilih Kehadiran</option>
-                <option value="hadir">Hadir</option>
-                <option value="tidak hadir">Tidak Hadir</option>
-              </select>
+            <div class="row row-cols-md-auto justify-content-center">
+              <div class="col-12" style="margin-top: 20px">
+                <button class="btn btn-danger">Kirim</button>
+              </div>
             </div>
+          </form>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran serta doa restu,kami ucapkan terima kasih.</p>
+            <h2 class="salam_penutup">وَالسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h2>
           </div>
-          <div class="col-12" style="margin-top: 35px">
-            <button class="btn btn-danger">Kirim</button>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
 
-    <section class="gifts" id="gifts">
+    <section class="penutup" id="penutup">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <span>Ungkapan Tanda Kasih</span>
-            <h2>Kirim Hadiah</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officiis hic praesentium!</p>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-6 justify-content-center text-center">
-              <ul class="list-group">
-                <li class="list-group-item mb-3">
-                  <div>BCA</div>
-                  <p>095984367 - VIKY RODIATUL ULUM</p>
-                </li>
-                <li class="list-group-item">
-                  <div>MANDIRI</div>
-                  <p>095984367 - VIKY RODIATUL ULUM</p>
-                </li>
-              </ul>
-            </div>
+            <img src="img/bridge.png" alt="bridge" data-aos="zoom-in-up" />
+            <span>Terima Kasih</span>
+            <p>Kami yang berbahagia</p>
+
+            <h2>Saepul & Santi</h2>
           </div>
         </div>
       </div>
@@ -373,7 +277,9 @@
         <div class="row">
           <div class="col text-center">
             <!-- <small class="block">&copy Ikock Digital. All Right Reserved.</small> -->
-            <small class="block">Design by: <a href="https://www.instagram.com/vickyrodiatululum24/">@vickyrodiatululum24@gmail.com</a></small>
+            <small class="block"
+              >Design <span><i class="bi bi-heart-fill"></i></span> <a href="https://www.instagram.com/vickyrodiatululum24/">@vickyrodiatululum24@gmail.com</a></small
+            >
           </div>
         </div>
       </div>
@@ -381,7 +287,7 @@
 
     <div id="audio-container">
       <audio id="lagu" autoplay loop>
-        <source src="audio/backsound.mp3" type="audio/mp3" />
+        <source src="audio/marry-your-daughter.mp3" type="audio/mp3" />
       </audio>
 
       <div class="icon-audio" style="display: none">
@@ -534,6 +440,11 @@
       const namaContainer = document.querySelector(".hero h4 span");
       namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ","); //itu adalah strign literal
       document.querySelector("#nama").value = nama;
+    </script>
+    <!-- animation AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

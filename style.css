@@ -77,9 +77,49 @@ body {
 .mynavbar .nav-link {
   text-transform: uppercase;
 }
+.salam_pembuka {
+  background-image: url(img/bg-home.jpg);
+  background-size: cover;
+  min-height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position:relative;
+}
+.salam_pembuka .cat{
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  
+}
+.salam_pembuka .cat img{
+  width:200px;
+  height:200px;
+}
+.salam_pembuka .salam p{
+  font-size:1.5rem;
+
+}
+.salam_pembuka h2{
+  font-weight:bold;
+  margin-bottom:1.5rem;
+  font-size:2rem;
+  
+}
+.salam_pembuka .hadist{
+  border:solid 1px var(--pink);
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:30px;
+  margin-left:10%;
+  margin-right:10%;
+  padding-top:20px;
+}
+
 
 .home {
-  background-image: url(img/bg-home.jpg);
+  background-image: url(img/bg.rose.jpg);
   background-size: cover;
   min-height: 100vh;
   margin-top: ;
@@ -91,11 +131,12 @@ body {
   justify-content: center;
   height: 100%;
 }
+
 .home h2,
 .story h2,
 .gallery h2,
 .rsvp h2,
-.gifts h2 {
+.penutup h2 {
   color: var(--pink);
   font-size: 3rem;
   font-family: "Sacramento", cursive;
@@ -116,9 +157,16 @@ body {
 .home .row .row p {
   font-size: 1rem;
 }
-.info {
+.home .row img{
+  box-shadow: var(--shadow);
+  background-image:url(img/bg.rose.jpg);
+  background-size: cover;
+}
+.info,
+.penutup{
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background-color:#ffc0cb;
 }
 .info .row a {
   margin-bottom: 2rem;
@@ -163,7 +211,7 @@ body {
 }
 .story span,
 .gallery span,
-.gifts span {
+.penutup span {
   text-transform: uppercase;
   color: #666;
   font-size: 0.9rem;
@@ -174,101 +222,8 @@ body {
 .story p,
 .gallery p,
 .rsvp p,
-.gifts p {
+.penutup p {
   font-size: 1rem;
-}
-.timeline {
-  list-style: none;
-  padding: 1.4rem 0;
-  margin-top: 1rem;
-  position: relative;
-}
-.timeline::before {
-  content: " ";
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  width: 1px;
-  background-color: var(--pink);
-  left: 50%;
-}
-.timeline li {
-  margin-bottom: 2rem;
-  position: relative;
-}
-.timeline li::before,
-.timeline li::after {
-  content: "";
-  display: table;
-}
-
-.timeline li::after {
-  clear: both;
-}
-
-.timeline li .timeline-image {
-  width: 160px;
-  height: 160px;
-  background-color: #ccc;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.timeline li .timeline-panel {
-  width: 40%;
-  float: left;
-  border: 1px solid #ccc;
-  padding: 2rem;
-  position: relative;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.timeline li .timeline-panel::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0px solid #ccc;
-  border-bottom: 15px solid transparent;
-  top: 70px;
-  right: -15px;
-}
-.timeline li .timeline-panel::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0px solid #ccc;
-  border-bottom: 14px solid transparent;
-  top: 70px;
-  right: -13px;
-}
-.timeline .timeline-inverted .timeline-panel {
-  float: right;
-}
-.timeline .timeline-inverted .timeline-panel::before {
-  border-top: 15px solid transparent;
-  border-left: 0px solid #ccc;
-  border-right: 15px solid #ccc;
-  border-bottom: 15px solid transparent;
-  top: 70px;
-  left: -15px;
-  right: auto;
-}
-.timeline .timeline-inverted .timeline-panel::after {
-  border-left: 0px solid #fff;
-  border-right: 14px solid #fff;
-  top: 70px;
-  left: -13px;
-  right: auto;
 }
 
 .row .column {
@@ -286,128 +241,10 @@ body {
   width: 25%;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.7);
+.rsvp form{
+  width:60%;
+  margin-bottom:3rem;
 }
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-.modal .content .mySlides img{
-  width: 90%;
-  height: 236px;
-}
-
-/* The Close Button */
-.close {
-  color: black;
-  position: absolute;
-  top: 10%;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-  z-index: 9;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-.modal .demo-list {
-  margin-bottom: -4px;
-  display: flex;
-  width: 300px;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .rsvp button {
   background-color: var(--pink);
   color: white;
@@ -418,11 +255,27 @@ img.hover-shadow {
   color: var(--pink);
   border: 1px solid var(--pink);
 }
+.rsvp .salam_penutup{
+  font-weight:bold;
+  margin-bottom:1.5rem;
+  font-size:2rem;
+  margin-top:2rem;
+  color:black;
+}
+.penutup img{
+  width:249px;
+  height:250px;
+  margin-bottom: 2rem;
+  padding-left:10px;
+}
 
 footer {
   padding: 3rem;
   background-color: var(--pink);
   color: white;
+}
+footer span i{
+  color: red;
 }
 footer a {
   text-decoration: none;
@@ -543,6 +396,9 @@ footer a:hover {
   }
   .timeline li .timeline-panel {
     width: calc((100% - 170px));
+  }
+  .rsvp .row form{
+    padding:0px 50px 0px 50px;
   }
 }
 
