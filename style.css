@@ -80,43 +80,48 @@ body {
 .salam_pembuka {
   background-image: url(img/bg-home.jpg);
   background-size: cover;
-  min-height:100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  position:relative;
+  position: relative;
 }
-.salam_pembuka .cat{
+.salam_pembuka .cat {
   position: absolute;
   bottom: -30px;
   left: -30px;
-  
 }
-.salam_pembuka .cat img{
-  width:200px;
-  height:200px;
+.salam_pembuka .cat img {
+  width: 200px;
+  height: 200px;
 }
-.salam_pembuka .salam p{
-  font-size:1.5rem;
-
+.salam_pembuka .salam p {
+  font-size: 1.5rem;
 }
-.salam_pembuka h2{
-  font-weight:bold;
-  margin-bottom:1.5rem;
-  font-size:2rem;
-  
+.salam_pembuka h2 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
 }
-.salam_pembuka .hadist{
-  border:solid 1px var(--pink);
+.salam_pembuka .hadist {
+  border: solid 1px var(--pink);
   border-radius: 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top:30px;
-  margin-left:10%;
-  margin-right:10%;
-  padding-top:20px;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 20px;
 }
-
+.salam_pembuka .nama_catin {
+  padding-top: 2rem;
+}
+.salam_pembuka .nama_catin h2 {
+  color: var(--pink);
+  font-size: 4rem;
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
+}
 
 .home {
   background-image: url(img/bg.rose.jpg);
@@ -157,16 +162,16 @@ body {
 .home .row .row p {
   font-size: 1rem;
 }
-.home .row img{
+.home .row img {
   box-shadow: var(--shadow);
-  background-image:url(img/bg.rose.jpg);
+  background-image: url(img/bg.rose.jpg);
   background-size: cover;
 }
 .info,
-.penutup{
+.penutup {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color:#ffc0cb;
+  background-color: #ffc0cb;
 }
 .info .row a {
   margin-bottom: 2rem;
@@ -182,7 +187,7 @@ body {
   width: 250px;
   height: 250px;
 }
-.info .row .map iframe{
+.info .row .map iframe {
   border: solid 1px var(--pink) !important;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -225,25 +230,45 @@ body {
 .penutup p {
   font-size: 1rem;
 }
-
-.row .column {
-  padding: 0 8px;
+.qoute {
+  background-image: url(img/concrete-wall-texture-abstract.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.qoute .cats {
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+}
+.qoute .cats img{
+  width: 180px;
+  height: 200px;
+}
+.qoute .hadist {
+  border: solid 3px #61312d;
+  border-radius: 5px;
+  padding: 3rem;
+  position: relative;
+  background-color: #ffffff;
+  color: rgb(97,49,49);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.qoute .hadist img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -145px;
+  right: 50px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-.rsvp form{
-  width:60%;
-  margin-bottom:3rem;
+.rsvp form {
+  width: 60%;
+  margin-bottom: 3rem;
 }
 .rsvp button {
   background-color: var(--pink);
@@ -255,18 +280,18 @@ body {
   color: var(--pink);
   border: 1px solid var(--pink);
 }
-.rsvp .salam_penutup{
-  font-weight:bold;
-  margin-bottom:1.5rem;
-  font-size:2rem;
-  margin-top:2rem;
-  color:black;
+.rsvp .salam_penutup {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: black;
 }
-.penutup img{
-  width:249px;
-  height:250px;
+.penutup img {
+  width: 249px;
+  height: 250px;
   margin-bottom: 2rem;
-  padding-left:10px;
+  padding-left: 10px;
 }
 
 footer {
@@ -274,7 +299,7 @@ footer {
   background-color: var(--pink);
   color: white;
 }
-footer span i{
+footer span i {
   color: red;
 }
 footer a {
@@ -319,9 +344,7 @@ footer a:hover {
   justify-content: center;
   align-items: center;
   line-height: 0;
-
 }
-
 
 @keyframes rotating {
   from {
@@ -397,8 +420,8 @@ footer a:hover {
   .timeline li .timeline-panel {
     width: calc((100% - 170px));
   }
-  .rsvp .row form{
-    padding:0px 50px 0px 50px;
+  .rsvp .row form {
+    padding: 0px 50px 0px 50px;
   }
 }
 
