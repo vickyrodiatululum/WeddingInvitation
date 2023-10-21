@@ -198,14 +198,26 @@ body {
   padding-bottom: none;
   box-shadow: var(--shadow);
 }
-.info .row .card {
-  background-color: var(--pink);
-  color: rgb(240, 240, 240);
+.info .waktu-acara .akad {
+  background-image: url(img/bg-waktu.jpeg);
+  background-size: cover;
+  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-radius:5px;
+  
 }
-.info .row .card .card-body {
-  background-color: rgb(240, 240, 240);
-  color: rgb(0, 0, 0);
+.info .waktu-acara .card-header{
+  font-family: "sacramento";
+  color: var(--pink);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.info .waktu-acara .card-body h3 {
+  font-size: 2rem;
+  color: #6d6d6d;
 }
 .story,
 .gallery,
@@ -239,6 +251,15 @@ body {
   justify-content: center;
   height: 100%;
   position: relative;
+}
+.qoute .bridgeCouple{
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+}
+.qoute .bridgeCouple img{
+  width: 220px;
+  height: 220px;
 }
 .qoute .cats {
   position: absolute;
